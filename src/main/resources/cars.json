@@ -1,0 +1,443 @@
+[
+  {
+    "is_sold": true,
+    "is_used": true,
+    "price": 13838,
+    "year": 2017,
+    "type": "Motorcycle",
+    "model": "VT750C2B-SHADOW PHANTOM",
+    "make": "Honda"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 15304,
+    "year": 2017,
+    "type": "Motorcycle",
+    "model": "Elite80",
+    "make": "Honda"
+  },
+  {
+    "is_sold": true,
+    "is_used": true,
+    "price": 39921,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "760i",
+    "make": "BMW"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 7598,
+    "year": 2018,
+    "type": "Motorcycle",
+    "model": "K75",
+    "make": "BMW"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 82234,
+    "year": 2017,
+    "type": "Multipurpose Passenger Vehicle (MPV)",
+    "model": "Pilot",
+    "make": "Honda"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 77038,
+    "year": 2018,
+    "type": "Passenger Car",
+    "model": "Golf R",
+    "make": "Volkswagen"
+  },
+  {
+    "is_sold": true,
+    "is_used": true,
+    "price": 85158,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "C-max",
+    "make": "Ford"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 57034,
+    "year": 2018,
+    "type": "Passenger Car",
+    "model": "540d",
+    "make": "BMW"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 25943,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "PRIUS",
+    "make": "Toyota"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 35858,
+    "year": 2017,
+    "type": "Multipurpose Passenger Vehicle (MPV)",
+    "model": "Escape",
+    "make": "Ford"
+  },
+  {
+    "is_sold": false,
+    "is_used": false,
+    "price": 72146,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "Fusion",
+    "make": "Ford"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 49389,
+    "year": 2016,
+    "type": "Passenger Car",
+    "model": "228i",
+    "make": "BMW"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 37295,
+    "year": 2018,
+    "type": "Passenger Car",
+    "model": "Yaris iA",
+    "make": "Toyota"
+  },
+  {
+    "is_sold": false,
+    "is_used": false,
+    "price": 86136,
+    "year": 2018,
+    "type": "Motorcycle",
+    "model": "K51",
+    "make": "BMW"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 70024,
+    "year": 2018,
+    "type": "Passenger Car",
+    "model": "458 Speciale Spider",
+    "make": "Ferrari"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 71466,
+    "year": 2018,
+    "type": "Motorcycle",
+    "model": "CB300F",
+    "make": "Honda"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 13273,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "328d",
+    "make": "BMW"
+  },
+  {
+    "is_sold": false,
+    "is_used": false,
+    "price": 55705,
+    "year": 2016,
+    "type": "Motorcycle",
+    "model": "METROPOLITAN",
+    "make": "Honda"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 26789,
+    "year": 2018,
+    "type": "Passenger Car",
+    "model": "Vanquish S",
+    "make": "Aston Martin"
+  },
+  {
+    "is_sold": true,
+    "is_used": true,
+    "price": 25526,
+    "year": 2017,
+    "type": "Multipurpose Passenger Vehicle (MPV)",
+    "model": "Explorer Sport Trac",
+    "make": "Ford"
+  },
+  {
+    "is_sold": true,
+    "is_used": true,
+    "price": 65303,
+    "year": 2018,
+    "type": "Motorcycle",
+    "model": "NC750X",
+    "make": "Honda"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 81122,
+    "year": 2018,
+    "type": "Motorcycle",
+    "model": "CBR650F",
+    "make": "Honda"
+  },
+  {
+    "is_sold": false,
+    "is_used": false,
+    "price": 95250,
+    "year": 2018,
+    "type": "Passenger Car",
+    "model": "SCION tC",
+    "make": "Toyota"
+  },
+  {
+    "is_sold": false,
+    "is_used": false,
+    "price": 92922,
+    "year": 2017,
+    "type": "Multipurpose Passenger Vehicle (MPV)",
+    "model": "Cayenne",
+    "make": "Porsche"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 6609,
+    "year": 2016,
+    "type": "Motorcycle",
+    "model": "VT1300CT-INTERSTATE",
+    "make": "Honda"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 70674,
+    "year": 2018,
+    "type": "Motorcycle",
+    "model": "MSX125/GROM",
+    "make": "Honda"
+  },
+  {
+    "is_sold": false,
+    "is_used": false,
+    "price": 63796,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "458 Speciale",
+    "make": "Ferrari"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 10513,
+    "year": 2017,
+    "type": "Motorcycle",
+    "model": "NPS50/RUCKUS",
+    "make": "Honda"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 71870,
+    "year": 2016,
+    "type": "Motorcycle",
+    "model": "NC700XL-NC700X",
+    "make": "Honda"
+  },
+  {
+    "is_sold": true,
+    "is_used": true,
+    "price": 31083,
+    "year": 2018,
+    "type": "Passenger Car",
+    "model": "FCHV-adv",
+    "make": "Toyota"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 35599,
+    "year": 2016,
+    "type": "Motorcycle",
+    "model": "TRX420FA2",
+    "make": "Honda"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 39025,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "428i",
+    "make": "BMW"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 26721,
+    "year": 2018,
+    "type": "Passenger Car",
+    "model": "650i",
+    "make": "BMW"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 37724,
+    "year": 2017,
+    "type": "Motorcycle",
+    "model": "CB500XA",
+    "make": "Honda"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 9667,
+    "year": 2016,
+    "type": "Passenger Car",
+    "model": "Corolla",
+    "make": "Toyota"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 80498,
+    "year": 2017,
+    "type": "Multipurpose Passenger Vehicle (MPV)",
+    "model": "Odyssey",
+    "make": "Honda"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 36780,
+    "year": 2018,
+    "type": "Passenger Car",
+    "model": "R8",
+    "make": "Audi"
+  },
+  {
+    "is_sold": true,
+    "is_used": true,
+    "price": 47729,
+    "year": 2017,
+    "type": "Motorcycle",
+    "model": "VFR800F/INTERCEPTOR",
+    "make": "Honda"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 96188,
+    "year": 2016,
+    "type": "Motorcycle",
+    "model": "CB500F",
+    "make": "Honda"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 27985,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "Corolla",
+    "make": "Toyota"
+  },
+  {
+    "is_sold": true,
+    "is_used": true,
+    "price": 87260,
+    "year": 2016,
+    "type": "Motorcycle",
+    "model": "CBR300RA",
+    "make": "Honda"
+  },
+  {
+    "is_sold": false,
+    "is_used": false,
+    "price": 47116,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "530i",
+    "make": "BMW"
+  },
+  {
+    "is_sold": true,
+    "is_used": true,
+    "price": 39923,
+    "year": 2018,
+    "type": "Motorcycle",
+    "model": "CB500F",
+    "make": "Honda"
+  },
+  {
+    "is_sold": false,
+    "is_used": false,
+    "price": 86190,
+    "year": 2016,
+    "type": "Passenger Car",
+    "model": "California T",
+    "make": "Ferrari"
+  },
+  {
+    "is_sold": false,
+    "is_used": false,
+    "price": 21553,
+    "year": 2016,
+    "type": "Motorcycle",
+    "model": "CBR650FA/CBR",
+    "make": "Honda"
+  },
+  {
+    "is_sold": false,
+    "is_used": false,
+    "price": 69863,
+    "year": 2018,
+    "type": "Motorcycle",
+    "model": "K23",
+    "make": "BMW"
+  },
+  {
+    "is_sold": true,
+    "is_used": false,
+    "price": 89145,
+    "year": 2018,
+    "type": "Motorcycle",
+    "model": "GL1800DA-Gold Wing Tour",
+    "make": "Honda"
+  },
+  {
+    "is_sold": false,
+    "is_used": true,
+    "price": 10080,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "A6",
+    "make": "Audi"
+  },
+  {
+    "is_sold": true,
+    "is_used": true,
+    "price": 82757,
+    "year": 2017,
+    "type": "Passenger Car",
+    "model": "550i",
+    "make": "BMW"
+  }
+]
