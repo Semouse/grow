@@ -16,6 +16,6 @@ public interface Service {
 
     List<Vehicle> getUnsoldNewCars();
 
-    boolean isAllCarsSoldExceptYear();
+    boolean isAllCarsSoldExceptYear(int exceptYear);
 
 }
