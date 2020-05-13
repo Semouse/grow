@@ -11,7 +11,7 @@ Simple project to try github repository
     - all new cars in stock;
     - boolean flag "true" if all cars with year != current are sold, else "false";
     - list of supported commands.
-* Input data can be in one JSON formats. Example of the format attached (first.json). Path to file supplied as command-line argument.[first.json](uploads/c7de356558619ed59b32e53a6f32dc54/first.json)
+* Input data can be in one JSON formats. Example of the format attached (first.json). Path to file supplied as command-line argument.
 * Error message should be printed in case of any unexpected/error situation (ex: unsupported operation is sent).
 
 # Technical requirements
