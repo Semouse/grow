@@ -21,19 +21,23 @@ public class ViewServiceTest {
             VehicleType.MOTORCYCLE, true, true);
         Vehicle car = new Vehicle("Ford", "C-max", 2017, 85158, VehicleType.PASSENGER_CAR,
             true, false);
+        Vehicle soldUsedCar = new Vehicle("Ford", "C-max", 2017, 45000, VehicleType.PASSENGER_CAR,
+            true, true);
+        Vehicle unsoldUsedCar = new Vehicle("Ford", "C-max", 2018, 50000, VehicleType.PASSENGER_CAR,
+            false, true);
         Vehicle van = new Vehicle("Ford", "Escape", 2018, 35858, VehicleType.MPV,
             false, false);
         Vehicle whiteVan = new Vehicle("Ford", "Escape", 2018, 36000, VehicleType.MPV,
             false, false);
 
-        service = new ViewService(Arrays.asList(car, motorcycle, van, whiteVan));
+        service = new ViewService(Arrays.asList(car, soldUsedCar, unsoldUsedCar, motorcycle, van, whiteVan));
     }
 
     @Test
     public void testGetCars() {
         List<Vehicle> actual = service.getCars();
 
-        Assert.assertEquals(actual.size(), 3);
+        Assert.assertEquals(actual.size(), 5);
         for (Vehicle vehicle : actual) {
             Assert.assertNotEquals(vehicle.getType(), VehicleType.MOTORCYCLE);
         }
@@ -43,7 +47,7 @@ public class ViewServiceTest {
     public void testGetUnsoldCars() {
         List<Vehicle> actual = service.getUnsoldCars();
 
-        Assert.assertEquals(actual.size(), 2);
+        Assert.assertEquals(actual.size(), 3);
         for (Vehicle vehicle : actual) {
             Assert.assertFalse(vehicle.isSold());
             Assert.assertNotEquals(vehicle.getType(), VehicleType.MOTORCYCLE);

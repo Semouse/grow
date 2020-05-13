@@ -1,5 +1,7 @@
 package com.grow.model;
 
+import java.util.Objects;
+
 public class Vehicle {
 
     private String make;
@@ -21,6 +23,29 @@ public class Vehicle {
         this.type = type;
         this.sold = sold;
         this.used = used;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Vehicle vehicle = (Vehicle) o;
+        return year == vehicle.year &&
+            price == vehicle.price &&
+            sold == vehicle.sold &&
+            used == vehicle.used &&
+            Objects.equals(make, vehicle.make) &&
+            Objects.equals(model, vehicle.model) &&
+            type == vehicle.type;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(make, model, year, price, type, sold, used);
     }
 
     public int getPrice() {
