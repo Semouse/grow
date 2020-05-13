@@ -27,7 +27,7 @@ public class ViewService implements Service {
     public List<Vehicle> getUnsoldCars() {
         return vehicles.stream()
             .filter(vehicle -> VehicleType.MOTORCYCLE != vehicle.getType())
-            .filter(Vehicle::isSold)
+            .filter(vehicle -> !vehicle.isSold())
             .sorted(Comparator.comparingInt(Vehicle::getPrice))
             .collect(Collectors.toList());
     }

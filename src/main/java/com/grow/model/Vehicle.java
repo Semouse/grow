@@ -2,23 +2,23 @@ package com.grow.model;
 
 public class Vehicle {
 
-    private int price;
-    private int year;
-    private VehicleType type;
     private String make;
     private String model;
+    private int year;
+    private int price;
+    private VehicleType type;
     private boolean sold;
     private boolean used;
 
-    public Vehicle() {
+    private Vehicle() {
     }
 
-    public Vehicle(int price, int year, VehicleType type, String make, String model, boolean sold, boolean used) {
-        this.price = price;
-        this.year = year;
-        this.type = type;
+    public Vehicle(String make, String model, int year, int price, VehicleType type, boolean sold, boolean used) {
         this.make = make;
         this.model = model;
+        this.year = year;
+        this.price = price;
+        this.type = type;
         this.sold = sold;
         this.used = used;
     }
