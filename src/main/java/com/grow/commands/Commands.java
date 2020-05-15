@@ -1,20 +1,79 @@
 package com.grow.commands;
 
-public enum  Commands {
-    PRINT_CARS("print_cars"),
-    PRINT_UNSOLD_CARS("print_unsold_cars"),
-    PRINT_MOST_EXPENSIVE_CAR("print_most_expensive_car"),
-    PRINT_MOTORCYCLES("print_motorcycles"),
-    PRINT_UNSOLD_NEW_CARS("print_unsold_new_cars"),
-    PRINT_IS_ALL_CARS_SOLD_EXCEPT_YEAR("print_is_all_cars_sold_except_year");
+import com.grow.model.Vehicle;
+import com.grow.service.ViewService;
 
-    private String value;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-    Commands(String value) {
-        this.value = value;
+public class Commands {
+
+    private ViewService service;
+    private Map<String, ICommand> commands;
+
+    public Commands() {
     }
 
-    public String getValue() {
-        return value;
+    public void init(ViewService service) {
+        this.service = service;
+        commands = new HashMap<>();
+        commands.put("print_cars", new PrintCarsCommand());
+        commands.put("print_unsold_cars", new PrintUnsoldCarsCommand());
+        commands.put("print_most_expensive_car", new PrintMostExpensiveCarCommand());
+        commands.put("print_motorcycles", new PrintMotorcyclesCommand());
+        commands.put("print_unsold_new_cars", new PrintUnsoldNewCarsCommand());
     }
+
+    public void execute(String command) {
+        ICommand iCommand = commands.get(command);
+        if (iCommand != null) {
+            iCommand.execute();
+        }
+    }
+
+    private void print(List<Vehicle> vehicles) {
+        vehicles.forEach(Vehicle::print);
+    }
+
+    private class PrintCarsCommand implements ICommand {
+
+        @Override
+        public void execute() {
+            print(service.getCars());
+        }
+    }
+
+    private class PrintMostExpensiveCarCommand implements ICommand {
+
+        @Override
+        public void execute() {
+            service.getMostExpensiveCar().print();
+        }
+    }
+
+    private class PrintMotorcyclesCommand implements ICommand {
+
+        @Override
+        public void execute() {
+            print(service.getMotorcycles());
+        }
+    }
+
+    private class PrintUnsoldCarsCommand implements ICommand {
+
+        @Override
+        public void execute() {
+            print(service.getUnsoldCars());
+        }
+    }
+
+    private class PrintUnsoldNewCarsCommand implements ICommand {
+
+        @Override
+        public void execute() {
+            print(service.getUnsoldNewCars());
+        }
+    }
+
 }

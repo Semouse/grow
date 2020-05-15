@@ -1,7 +1,7 @@
 package com.grow;
 
-import com.grow.commands.CommandMap;
 import com.grow.commands.Commands;
+import com.grow.controller.Controller;
 import com.grow.data.DataSource;
 import com.grow.model.Vehicle;
 import com.grow.service.ViewService;
@@ -26,16 +26,14 @@ public class App {
 
         ViewService service = new ViewService(vehicles);
 
-        for (Commands command : Commands.values()) {
-            System.out.println(command.getValue());
-        }
-
         Scanner scanner = new Scanner(System.in);
         String s = scanner.nextLine();
-        CommandMap commandMap = new CommandMap();
-        commandMap.init(service);
 
-        commandMap.execute(s);
+        Commands commands = new Commands();
+        commands.init(service);
+
+        Controller controller = new Controller(commands);
+        controller.execute(s);
     }
 
 }
