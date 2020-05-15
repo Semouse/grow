@@ -18,62 +18,26 @@ public class Commands {
     public void init(ViewService service) {
         this.service = service;
         commands = new HashMap<>();
-        commands.put("print_cars", new PrintCarsCommand());
-        commands.put("print_unsold_cars", new PrintUnsoldCarsCommand());
-        commands.put("print_most_expensive_car", new PrintMostExpensiveCarCommand());
-        commands.put("print_motorcycles", new PrintMotorcyclesCommand());
-        commands.put("print_unsold_new_cars", new PrintUnsoldNewCarsCommand());
+        commands.put("print_cars", command -> print(service.getCars()));
+        commands.put("print_is_all_cars_sold_except_year", parameters -> {
+            int year = Integer.valueOf(parameters[1]);
+            System.out.println(service.isAllCarsSoldExceptYear(year));
+        });
+        commands.put("print_most_expensive_car", command -> service.getMostExpensiveCar().print());
+        commands.put("print_motorcycles", command -> print(service.getMotorcycles()));
+        commands.put("print_unsold_cars", command -> print(service.getUnsoldCars()));
+        commands.put("print_unsold_new_cars", command -> print(service.getUnsoldNewCars()));
     }
 
-    public void execute(String command) {
-        ICommand iCommand = commands.get(command);
+    public void execute(String[] command) {
+
+        ICommand iCommand = commands.get(command[0]);
         if (iCommand != null) {
-            iCommand.execute();
+            iCommand.execute(command);
         }
     }
 
     private void print(List<Vehicle> vehicles) {
         vehicles.forEach(Vehicle::print);
     }
-
-    private class PrintCarsCommand implements ICommand {
-
-        @Override
-        public void execute() {
-            print(service.getCars());
-        }
-    }
-
-    private class PrintMostExpensiveCarCommand implements ICommand {
-
-        @Override
-        public void execute() {
-            service.getMostExpensiveCar().print();
-        }
-    }
-
-    private class PrintMotorcyclesCommand implements ICommand {
-
-        @Override
-        public void execute() {
-            print(service.getMotorcycles());
-        }
-    }
-
-    private class PrintUnsoldCarsCommand implements ICommand {
-
-        @Override
-        public void execute() {
-            print(service.getUnsoldCars());
-        }
-    }
-
-    private class PrintUnsoldNewCarsCommand implements ICommand {
-
-        @Override
-        public void execute() {
-            print(service.getUnsoldNewCars());
-        }
-    }
-
 }

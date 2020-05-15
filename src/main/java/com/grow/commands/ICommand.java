@@ -2,5 +2,6 @@ package com.grow.commands;
 
 public interface ICommand {
 
-    void execute();
+    void execute(String ...parameters);
+
 }

@@ -11,7 +11,8 @@ public class Controller {
     }
 
     public void execute(String command) {
-        commands.execute(command);
+        String[] commandAndParams = command.split("\\s+");
+        commands.execute(commandAndParams);
     }
 
 }
