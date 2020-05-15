@@ -9,14 +9,12 @@ import java.util.Map;
 
 public class Commands {
 
-    private ViewService service;
     private Map<String, ICommand> commands;
 
     public Commands() {
     }
 
     public void init(ViewService service) {
-        this.service = service;
         commands = new HashMap<>();
         commands.put("print_cars", command -> print(service.getCars()));
         commands.put("print_is_all_cars_sold_except_year", parameters -> {
